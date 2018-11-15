@@ -32,13 +32,13 @@ var todo = new Todo({
     content: 'redssdffd'
 })
 
-// todo.save(function (err) {
-//     if(err){
-//         throw err
-//     }else {
-//         console.log('success')
-//     }
-// })
+todo.save(function (err) {
+    if(err){
+        throw err
+    }else {
+        console.log('success')
+    }
+})
 
 Todo.findOne({'user_id':'34434234'},function (err,doc) {
     if(!err){
